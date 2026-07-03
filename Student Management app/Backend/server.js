@@ -112,6 +112,10 @@ app.get("/api/courses", async(req, res) => {
         const courses = await course.find.sort ({name:1});
         logger.info(`Retrieved ${courses.length} Courses was created with sucess`)
     }
+
+    catch{
+
+    }
     
 });
 
